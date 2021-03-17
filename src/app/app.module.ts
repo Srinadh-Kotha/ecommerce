@@ -5,16 +5,43 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './product/shared/header/header.component';
+import { FooterComponent } from './product/shared/footer/footer.component';
+import { NavComponent } from './product/shared/nav/nav.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { Product } from './models/product';
+import { ProductItemComponent } from './product/product-list/product-item/product-item.component';
+
+import { CartComponent } from './cart/cart.component';
+import { CartItemComponent } from './cart/cart-item/cart-item.component';
+// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent,
+    ProductListComponent,
+    ProductItemComponent,
+    
+    CartComponent,
+    
+    CartItemComponent,
+    
+ 
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
