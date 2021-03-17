@@ -1,2 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.css';
+
+.product-btn{
+    font-size: smaller;
+}
+
+body{
+    margin: 20px auto;
+    padding: 20px;
+    /* max-width: 700px; */
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+
+a-icon.a-star-small-4 {
+    background-position: -84px -8px;
+}
+
+.a-icon-star, .a-icon-star-medium, .a-icon-star-mini, .a-icon-star-small {
+    position: relative;
+    vertical-align: text-top;
+}
+
+.a-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.a-icon, .a-link-emphasis:after {
+    /* background-image: url(https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png); */
+    -webkit-background-size: 400px 900px;
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+
+
+}
+
+.a-size-base-plus {
+    font-size: 16px!important;
+    line-height: 24px!important;
+}
+
+.a-text-normal {
+    font-weight: 400!important;
+    font-style: normal!important;
+    text-transform: none!important;
+    text-decoration: none!important;
+}
+
+.a-size-base-plus {
+    font-family: sans-serif ;
+    font-size: large;
+    
+}
