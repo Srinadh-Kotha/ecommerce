@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Orders_purchased</title>
+</head>
+<body>
+    <form method="POST" class="container text pt-7;" *ngFor="let k of [0,1]">
+      <section  style="margin-top: 30px;">
+        <table class="table" >
+          <thead>
+            <tr>
+              <th scope="col" id="orders" style="padding-left:30px ;"> Order Id : {{ orders[k].orderId }}</th>
+            </tr>
+            <tr>
+              <th scope="col" id="total_cost" style="padding-left:30px ;">Total Amount : {{ total_amount(k) }}</th>
+            </tr>
+            <tr>
+              <th scope="col" id="shipping_address"  style="padding-left:30px ;">Shipping Address : {{orders[k].shipping_adderess.street}}, {{orders[k].shipping_adderess.city}}, {{orders[k].shipping_adderess.state}}, {{orders[k].shipping_adderess.pincode}} , {{orders[k].shipping_adderess.country}}</th>
+            </tr>
+            <tr>
+              <th scope="col" id="order_date" style="padding-left:30px ;">Order Date : {{ orders[k].order_date.getDate() }} - {{ orders[k].order_date.getMonth() }} - {{ orders[k].order_date.getFullYear() }}</th>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <div class="row">
+        <div class="col-md-3" style="margin-top : 30px;" id="left" *ngFor="let i of orders[k].productIds">
+          <div class="card" style=" width: 16rem;">
+              <div class="card-body" style='text-align:center'>
+                <p class="card-text" id="p_id">id : {{ i.id }}</p>
+                <p class="card-text" id="p_name">Name : {{ i.name }}</p>
+                <p class="card-text" id="p_price">price : {{ i.price }}</p>
+                <a href="" name="three_bhk" class="btn btn-primary">Go to Product</a>
+              </div>
+          </div>
+        </div>
+      </div>
+  </form>
+        
+</body>
+</html>
+

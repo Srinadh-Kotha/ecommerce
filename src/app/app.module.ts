@@ -14,6 +14,7 @@ import { ProductItemComponent } from './product/product-list/product-item/produc
 
 import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
+import { OrdersPurchasedComponent } from './orders-purchased/orders-purchased.component';
 // import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -31,6 +32,8 @@ import { CartItemComponent } from './cart/cart-item/cart-item.component';
     CartComponent,
     
     CartItemComponent,
+    
+    OrdersPurchasedComponent,
     
  
     
